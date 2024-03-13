@@ -13,15 +13,19 @@ button.addEventListener('click', food);
   }button.disabled = true;   
    const response = await promise();
    button.disabled = false;
+   
    if(burger.checked){
     image.src= "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
     id.innerText = "Order ID : 52";
+    image.style.display = "block"
    }else if(fries.checked) {
     image.src = "https://images.unsplash.com/photo-1576107232684-1279f390859f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZnJpZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
     id.innerText ="Order ID: 63";
+    image.style.display = "block"
    }else if(drink.checked){
     image.src = "https://images.unsplash.com/photo-1437418747212-8d9709afab22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZHJpbmt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60"
     id.innerHTML ="Order ID: 71";
+    image.style.display = "block"
    } 
 }
 function promise(){
